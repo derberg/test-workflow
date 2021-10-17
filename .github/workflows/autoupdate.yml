@@ -14,7 +14,7 @@ jobs:
       - name: Autoupdating
         uses: docker://chinthakagodawita/autoupdate-action:v1
         env:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          GITHUB_TOKEN: '${{ secrets.TEST_TOKEN }}'
           PR_FILTER: "all"
           PR_READY_STATE: "ready_for_review"
           MERGE_CONFLICT_ACTION: "ignore"
